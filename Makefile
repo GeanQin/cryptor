@@ -1,5 +1,5 @@
 all:
-	gcc sm4.c crypto_file.c main.c -g -o QCryptor -lssl -lcrypto
+	gcc test.c sm4.c base64.c rsa.c -lcrypto -lssl -o qcryptor
 
 clean:
-	rm -rf QCryptor test/*.crypto
+	rm -rf qcryptor
